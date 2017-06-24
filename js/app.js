@@ -36,7 +36,7 @@ Find the div with the class name of "profile" and replace the n/a with a verse f
 
 var getProfile = document.getElementsByClassName("profile");
 console.log(getProfile);
-getProfile[0].innerHTML = "Purple Rain";
+getProfile[0].innerHTML = '"Purple Rain"';
 
 /*5. Bruce Lee
 
@@ -44,7 +44,7 @@ Find the div with the class name of "profile" and replace the n/a with a quote f
 
 var updateProfile = document.getElementsByClassName("profile");
 console.log(updateProfile);
-updateProfile[1].innerHTML = "Ai ya!";
+updateProfile[1].innerHTML = '"Ai ya!"';
 
 /*6. Samuel L Jackson
 
@@ -84,8 +84,10 @@ aliasParent.appendChild(modifyTim);
 var createProfile = document.getElementsByClassName("block3 col-sm-4");
 console.log(createProfile);
 
-var insertImg = document.getElementsByClassName("https://s3.amazonaws.com/lawgical/assets/data/2689/original.png");
-insertImg.id = "http://www.trybackyardfarming.com/wp-content/uploads/2017/05/peony-pixabay-e1494959531536-150x150.jpg";
+var insertImg = document.getElementsByTagName("img");
+console.log(insertImg);
+insertImg[8].id = "pic9";
+document.getElementById("pic9").src = "http://www.trybackyardfarming.com/wp-content/uploads/2017/05/peony-pixabay-e1494959531536-150x150.jpg";
 
 var whatever = document.createElement("div");
 whatever.id = "name9";
@@ -104,6 +106,6 @@ createProfile[2].appendChild(whatever3);
 
 var whatever4 = document.createElement("div");
 whatever4.id = "bio9";
-whatever4.innerHTML = "Help, please!";
+whatever4.innerHTML = '"Help, please!"';
 createProfile[2].appendChild(whatever4);
 
